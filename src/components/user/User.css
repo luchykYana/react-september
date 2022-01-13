@@ -1,0 +1,13 @@
+.user{
+    border: 2px solid dodgerblue;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+}
+
+.address, .company{
+    padding-left: 10px;
+}
+
+.geo{
+    padding-left: 10px;
+}
