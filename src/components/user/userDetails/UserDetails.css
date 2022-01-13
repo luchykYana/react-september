@@ -1,0 +1,18 @@
+.userDetails {
+    width: 400px;
+    border: 2px solid green;
+    padding: 10px;
+}
+
+.userDetails div {
+    margin-bottom: 3px;
+}
+
+.userDetails button {
+    background-color: green;
+    color: white;
+}
+
+.userDetails button:hover {
+    background-color: slategray;
+}

@@ -1,0 +1,20 @@
+.usersPage {
+    display: flex;
+    margin: 20px 50px;
+    justify-content: space-between;
+}
+
+.users {
+    width: 400px;
+    border: 2px solid dodgerblue;
+    padding: 10px;
+}
+
+.users button {
+    border: 1px solid slategray;
+    background-color: white;
+}
+
+.users button:hover {
+    color: white;
+}
