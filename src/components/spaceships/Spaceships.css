@@ -1,0 +1,6 @@
+.spaceships{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 30px;
+    justify-content: space-between;
+}
