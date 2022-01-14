@@ -12,14 +12,10 @@ export default function UserForm({users, findUsers}) {
             return;
         }
 
-        const array = users.filter(user => {
-            if (user.name.toLowerCase().includes(formState.name) &&
-                user.username.toLowerCase().includes(formState.username) &&
-                user.email.toLowerCase().includes(formState.email)
-            ) {
-                return user;
-            }
-        })
+        const array = users.filter(user =>
+            user.name.toLowerCase().includes(formState.name) &&
+            user.username.toLowerCase().includes(formState.username) &&
+            user.email.toLowerCase().includes(formState.email))
 
         if (array) {
             findUsers(array);
