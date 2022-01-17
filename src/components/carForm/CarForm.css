@@ -1,0 +1,15 @@
+.form {
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid dodgerblue;
+    margin: 30px 50px;
+    padding: 20px;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-block > span {
+    font-size: 10px;
+}

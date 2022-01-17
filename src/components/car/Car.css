@@ -1,0 +1,17 @@
+.car {
+    width: 155px;
+    border: 2px solid dodgerblue;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.car button {
+    margin-bottom: 5px;
+}
+
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    grid-column-gap: 10px;
+    justify-content: center;
+}
