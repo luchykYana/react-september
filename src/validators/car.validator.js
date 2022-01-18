@@ -28,7 +28,7 @@ export const CarValidator = Joi.object({
 
     year: Joi
         .number()
-        .min(1900)
+        .min(1990)
         .max(new Date().getFullYear())
         .required()
         .messages({

@@ -14,9 +14,7 @@ export default function CarComponent() {
         carService.getAll().then(value => setCars([...value.data]));
     }, [trigger])
 
-    const updatePage = data => {
-        setTrigger(data);
-    }
+    const updatePage = data => setTrigger(data);
 
     const updateCar = (car) => {
         setUpdatedCar(car);
