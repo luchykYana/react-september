@@ -1,0 +1,10 @@
+.post {
+    width: 500px;
+    font-size: 12px;
+    border: 2px solid #ed7966;
+    padding: 5px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import {Route, Routes} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import {Layout} from './components';
+import {
+    HomePage,
+    NotFoundPage,
+    PostCommentsPage,
+    PostDetailsPage,
+    PostsPage,
+    UserDetailsPage,
+    UserPostsPage,
+    UsersPage
+} from './pages';
+
+const App = () => {
+    return (
+        <Routes>
+            <Route path={'/'} element={<Layout/>}>
+
+                <Route index element={<HomePage/>}/>
+
+                <Route path={'users'} element={<UsersPage/>}>
+                    <Route path={':id'} element={<UserDetailsPage/>}>
+                        <Route path={`posts`} element={<UserPostsPage/>}/>
+                    </Route>
+                </Route>
+
+                <Route path={'users/:id/posts/:postId'} element={<PostDetailsPage/>}/>
+
+                <Route path={'posts'} element={<PostsPage/>}>
+                    <Route path={':postId'} element={<PostDetailsPage/>}>
+                        <Route path={'comments'} element={<PostCommentsPage/>}/>
+                    </Route>
+                </Route>
+
+                <Route path={'users/:id/posts/:postId/comments'} element={<PostCommentsPage/>}/>
+
+                <Route path={'*'} element={<NotFoundPage/>}/>
+
+            </Route>
+        </Routes>
+    );
+};
 
 export default App;
