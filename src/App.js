@@ -25,15 +25,11 @@ const App = () => {
                     </Route>
                 </Route>
 
-                <Route path={'users/:id/posts/:postId'} element={<PostDetailsPage/>}/>
-
                 <Route path={'posts'} element={<PostsPage/>}>
                     <Route path={':postId'} element={<PostDetailsPage/>}>
                         <Route path={'comments'} element={<PostCommentsPage/>}/>
                     </Route>
                 </Route>
-
-                <Route path={'users/:id/posts/:postId/comments'} element={<PostCommentsPage/>}/>
 
                 <Route path={'*'} element={<NotFoundPage/>}/>
 
