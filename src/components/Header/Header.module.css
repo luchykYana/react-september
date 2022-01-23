@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 60px;
+    background-color: #2b6777;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+
+}
+
+.header a {
+    color: #ffffff;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.header a[class='active'] {
+    color: #52ab98;
+}

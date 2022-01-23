@@ -1,0 +1,28 @@
+.user {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    padding: 2px 5px;
+    align-items: center;
+    color: #2b6777;
+}
+
+.user > .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.user > .buttons button {
+    border: none;
+    border-radius: 5px;
+    background-color: #2b6777;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 300ms color, 300ms background-color;
+}
+
+.user > .buttons button:hover {
+    background-color: #c8d8e4;
+    color: #2b6777;
+}
