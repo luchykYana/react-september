@@ -17,7 +17,7 @@ const EpisodeDetailsPage = () => {
             </div>
 
             <div className={css2.characters}>
-                {state.characters.map(character => <Character key={character} character={character}/>)}
+                {state.characters.map(character => <Character key={character.split('/')[5]} character={character}/>)}
             </div>
         </div>
     );

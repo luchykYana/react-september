@@ -9,7 +9,7 @@ const Character = ({character}) => {
 
     useEffect(() => {
         characterService.getCharacter(character).then(value => setPerson(value.data));
-    }, []);
+    }, [character]);
 
     const {image, name, status, species, gender, origin, location} = person;
 
