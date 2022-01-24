@@ -1,0 +1,43 @@
+.dBlock {
+    display: block;
+}
+
+.dFlex {
+    display: flex;
+}
+
+.mainDiv {
+    margin: 20px 10px;
+    justify-content: center;
+    gap: 50px;
+}
+
+.mainDiv button {
+    width: 100px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #eb6b40;
+    color: white;
+    padding: 5px 10px;
+}
+
+.imageDiv > button {
+    margin-top: 4px;
+    margin-left: 223px;
+}
+
+.img {
+    width: 320px;
+    height: 240px;
+    border: 2px solid #eb6b40;
+}
+
+button {
+    cursor: pointer;
+    transition: 300ms color, 300ms background-color;
+}
+
+button:hover {
+    background-color: #398854;
+}
