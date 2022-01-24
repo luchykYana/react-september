@@ -1,0 +1,15 @@
+.person {
+    width: 210px;
+    font-family: "Comic Sans MS", serif;
+    font-size: 12px;
+    background-color: rgba(105, 200, 236, 0.2);
+    box-shadow: #a1fd7c 1px 0 10px;
+}
+
+.person img {
+    width: 210px;
+}
+
+.person > div {
+    padding: 5px 10px;
+}

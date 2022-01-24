@@ -1,0 +1,21 @@
+.episode {
+    font-family: "Comic Sans MS", serif;
+    font-size: 10px;
+    width: 190px;
+    height: 100px;
+    background-color: rgba(131, 210, 228, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: #a1fd7c 1px 0 10px;
+}
+
+h2 {
+    font-size: 14px;
+    margin: 3px;
+    padding: 0;
+}
+
+.episode a {
+    text-decoration: none;
+    color: blue;
+}

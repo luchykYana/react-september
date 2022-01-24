@@ -1,0 +1,45 @@
+.title {
+    font-size: 20px;
+    font-family: "Comic Sans MS", serif;
+    color: #69c8ecff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 890px;
+    position: absolute;
+    top: -5px;
+}
+
+.episodes {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 50px 20px 50px;
+    gap: 22px;
+}
+
+.buttons {
+    margin-bottom: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+button {
+    font-family: "Comic Sans MS", serif;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    padding: 5px;
+    background-color: #a1fd7c;
+    cursor: pointer;
+    transition: 300ms color, 300ms background-color;
+}
+
+button:hover {
+    background-color: rgba(131, 210, 228, 0.5);
+}
+
+button:disabled {
+    background-color: rgba(161, 253, 124, 0.2);
+}

@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 30px;
+    padding-top: 10px;
+    background: linear-gradient(to right, #a6eee6ff, #fafd7cff);
+}
+
+.header a {
+    font-family: "Comic Sans MS", serif;
+    font-size: 35px;
+    color: #69c8ecff;
+    text-decoration: none;
+    text-shadow: #00FF00 1px 0 10px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
+    margin-left: 30px;
+}

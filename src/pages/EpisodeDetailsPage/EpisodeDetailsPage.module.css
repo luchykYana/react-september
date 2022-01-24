@@ -1,0 +1,15 @@
+.header {
+    font-family: "Comic Sans MS", serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgba(30, 144, 255, 0.1);
+}
+
+.characters {
+    margin: 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
