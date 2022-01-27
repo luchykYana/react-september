@@ -1,0 +1,12 @@
+.animals {
+    display: flex;
+    margin: 20px 100px;
+    padding: 20px 40px;
+    justify-content: space-between;
+    background-color: #f0a04b;
+    color: #183a1d;
+}
+
+body {
+    background-color: #e1eedd;
+}
