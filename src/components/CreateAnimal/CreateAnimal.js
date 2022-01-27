@@ -19,6 +19,8 @@ const CreateAnimal = ({species}) => {
             type: 'create',
             payload: {id: new Date().getMilliseconds() * new Date().getMinutes(), name: e.target.name.value}
         });
+
+        e.target.name.value = '';
     }
 
     return (
