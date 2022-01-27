@@ -1,0 +1,28 @@
+.counter {
+    padding: 15px 20px;
+    color: #f5eec2;
+    background-color: #416a59;
+    display: flex;
+}
+
+.state {
+    width: 30px;
+    text-align: center;
+}
+
+.counter button {
+    width: 50px;
+    margin-left: 10px;
+    padding: 2px 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #a9c25d;
+    color: #39395f;
+    cursor: pointer;
+    transition: 300ms color, 300ms background-color;
+}
+
+.counter button:hover {
+    background-color: #39395f;
+    color: #a9c25d;
+}
