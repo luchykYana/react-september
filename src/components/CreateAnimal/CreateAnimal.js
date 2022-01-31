@@ -1,12 +1,8 @@
-import {useReducer} from 'react';
-
-import reduceAnimal from '../../reducer';
 import css from './CreateAnimal.module.css';
 
 import {DeleteAnimal} from '../DeleteAnimal/DeleteAnimal';
 
-const CreateAnimal = ({species}) => {
-    const [state, dispatch] = useReducer(reduceAnimal);
+const CreateAnimal = ({species, state, dispatch, createA, deleteA}) => {
 
     const submit = (e) => {
         e.preventDefault();
@@ -16,7 +12,7 @@ const CreateAnimal = ({species}) => {
         }
 
         dispatch({
-            type: 'create',
+            type: createA,
             payload: {id: new Date().getMilliseconds() * new Date().getMinutes(), name: e.target.name.value}
         });
 
@@ -34,10 +30,21 @@ const CreateAnimal = ({species}) => {
             </div>
 
             {
-                state && state.animals.map((animal) => <DeleteAnimal
+                species === 'cat' && state && state.cats.map((animal) => <DeleteAnimal
                     key={animal.id}
                     animal={animal}
-                    dispatch={dispatch}/>)
+                    dispatch={dispatch}
+                    deleteA={deleteA}
+                />)
+            }
+
+            {
+                species === 'dog' && state && state.dogs.map((animal) => <DeleteAnimal
+                    key={animal.id}
+                    animal={animal}
+                    dispatch={dispatch}
+                    deleteA={deleteA}
+                />)
             }
         </div>
     );
