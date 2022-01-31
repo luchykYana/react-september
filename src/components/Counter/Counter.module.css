@@ -1,3 +1,10 @@
+.main {
+    display: flex;
+    margin: 30px 50px;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
 .counter {
     padding: 15px 20px;
     color: #f5eec2;

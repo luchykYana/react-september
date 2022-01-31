@@ -6,8 +6,6 @@ export default function App() {
     return (
         <div className={css.main}>
             <Counter/>
-            <Counter/>
-            <Counter/>
         </div>
     );
 }
