@@ -1,0 +1,11 @@
+.user {
+    width: 250px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-left: 5px solid #3aafa9;
+    border-top: 5px solid #3aafa9;
+    background-color: #def2f1;
+    color: #17252a;
+    border-radius: 10px;
+}
