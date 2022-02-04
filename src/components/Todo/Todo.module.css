@@ -1,0 +1,40 @@
+.completed {
+    text-decoration: line-through solid #f4976c;
+}
+
+.todo {
+    width: 310px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    color: #303c6c;
+    background-color: #fbe8a6;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.todo > input {
+    margin-right: 20px;
+}
+
+.todo > div {
+    width: 230px;
+    overflow-x: auto;
+    padding-right: 10px;
+}
+
+.todo > button {
+    border: none;
+    background-color: #f4976c;
+    border-radius: 5px;
+    color: #303c6c;
+    cursor: pointer;
+    transition: 300ms color, 300ms background-color;
+    margin-left: 10px;
+}
+
+.todo > button:hover {
+    color: #fbe8a6;
+    background-color: #303c6c;
+}

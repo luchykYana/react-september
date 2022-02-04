@@ -1,0 +1,10 @@
+.results {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 32px;
+    background-color: #f4976c;
+    color: #303c6c;
+}
